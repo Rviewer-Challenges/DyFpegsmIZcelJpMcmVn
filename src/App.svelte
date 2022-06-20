@@ -4,7 +4,7 @@
   import RightPane from './views/RightPane.svelte'
 </script>
 
-<main>
+<main class="grid grid-cols-3">
   <LeftPane/>
   <TweetFeed/>
   <RightPane/>
@@ -19,11 +19,5 @@
   }
   *, *:before, *:after {
     box-sizing: inherit;
-  }
-
-  main {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% auto 30%;
   }
 </style>
