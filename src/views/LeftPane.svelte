@@ -1,3 +1,7 @@
+<script>
+    import TweetNavigation from '../components/TweetNavigation.svelte'
+</script>
+
 <section>
-    Left pane
+    <TweetNavigation/>
 </section>
