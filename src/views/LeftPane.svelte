@@ -2,6 +2,6 @@
     import TweetNavigation from '../components/TweetNavigation.svelte'
 </script>
 
-<section>
+<section class="border-r">
     <TweetNavigation/>
 </section>

@@ -22,13 +22,14 @@
       { label: 'Twittear', type: NAVIGATION_ITEM_TYPES.Button },
     ]
 </script>
-<ul class="float-right border-r w-1/2 cursor-default">
+
+<ul class="float-right w-1/2 cursor-default">
     {#each navigationList as navigationItem}
         <li class="m-5" class:fontBold="{navigationItem.selected === true}">
             {#if navigationItem.type === NAVIGATION_ITEM_TYPES.ImageOnly}
                 <img src={navigationItem.icon} alt={navigationItem.label} class="w-7">
             {:else if navigationItem.type === NAVIGATION_ITEM_TYPES.Button}
-                <button class="bg-blue-400 hover:bg-blue-500 rounded-full py-2 px-2 w-full">{navigationItem.label}</button>
+                <button class="bg-sky-400 hover:bg-sky-500 rounded-full py-2 px-2 w-full">{navigationItem.label}</button>
             {:else}
                 <button class="hover:bg-neutral-900 rounded-3xl inline py-2 px-2">
                     {#if navigationItem.type === NAVIGATION_ITEM_TYPES.Image || navigationItem.type === NAVIGATION_ITEM_TYPES.ImageOnly}
