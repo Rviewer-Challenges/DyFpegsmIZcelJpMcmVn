@@ -4,7 +4,7 @@
     import TweetButton from './TweetButton.svelte'
     import TweetIconButton from './TweetIconButton.svelte'
 
-    let avatar = {
+    const avatar = {
       src: 'https://img.freepik.com/free-photo/tennis-player-profile-picture-young-happy-man-sportswear-playing-tennis-waiting-serve_496169-1744.jpg',
     }
 </script>

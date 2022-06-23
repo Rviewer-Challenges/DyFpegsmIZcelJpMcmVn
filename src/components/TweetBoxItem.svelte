@@ -1,5 +1,5 @@
 <script>
-    const boxItem = { topic: 'Topic', name: '#Name', tweets: 0 }
+    export let boxItem = { topic: 'Topic', name: '#Name', tweets: 0 }
 </script>
 
 
