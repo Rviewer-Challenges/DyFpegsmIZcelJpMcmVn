@@ -1,4 +1,6 @@
 <script>
+    import TweetBoxItem from './TweetBoxItem.svelte'
+    
     export let boxData = {
       name: 'Tweet box',
       items: [
@@ -7,18 +9,14 @@
     }
 </script>
 
-<section class="rounded-lg mt-16 bg-zinc-800">
+<section class="rounded-lg mt-16 bg-zinc-900">
     <h1 class="text-lg font-extrabold py-4 mx-4">{boxData.name}</h1>
     <ul class="w-full cursor-pointer">
         {#each boxData.items as boxItem}
-            <li class="h-18 flex flex-col justify-between py-1 px-4 hover:bg-zinc-700">
-                <span class="text-zinc-400 text-xs">{boxItem.topic}</span>
-                <span class="text-white text-sm font-semibold">{boxItem.name}</span>
-                <span class="text-zinc-400 text-xs">{`${boxItem.tweets} Tweets`}</span>
-            </li>
+            <TweetBoxItem boxItem={boxItem}/>
         {/each}
-        <li class="h-12 py-2 px-4 hover:bg-zinc-700 rounded-b-xl">
-            <a class="text-sky-400 text-sm" href="/" on:click={(e) => { e.preventDefault() }}>Mostrar más</a>
+        <li class="h-12 py-2 px-4 hover:bg-zinc-800 rounded-b-xl">
+            <a class="text-sky-500 text-sm" href="/" on:click={(e) => { e.preventDefault() }}>Mostrar más</a>
         </li>
     </ul>
 

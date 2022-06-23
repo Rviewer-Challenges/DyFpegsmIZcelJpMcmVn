@@ -1,7 +1,9 @@
+<script>
+    import TweetFeedHeader from '../components/TweetFeedHeader.svelte'
+</script>
+
 <section class="grid grid-rows-2">
-    <section>
-        <header class="h-8 my-2">Header</header>
-    </section>
+    <TweetFeedHeader/>
     <section class="grid">
         Feed section
     </section>

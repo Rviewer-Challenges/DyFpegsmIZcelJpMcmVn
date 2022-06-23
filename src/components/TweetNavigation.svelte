@@ -1,4 +1,6 @@
 <script>
+    import TweetButton from './TweetButton.svelte'
+    import TweetIcon from './TweetIcon.svelte'
 
     const NAVIGATION_ITEM_TYPES = {
       ImageOnly: 'ImageOnly',
@@ -23,21 +25,23 @@
     ]
 </script>
 
-<ul class="float-right w-1/2 cursor-default">
+<ul class="float-right w-2/5 cursor-default">
     {#each navigationList as navigationItem}
-        <li class="m-5" class:fontBold="{navigationItem.selected === true}">
+        <li class="m-4" class:fontBold="{navigationItem.selected === true}">
             {#if navigationItem.type === NAVIGATION_ITEM_TYPES.ImageOnly}
-                <img src={navigationItem.icon} alt={navigationItem.label} class="w-7">
+                <button class="hover:bg-sky-900/25 p-3 rounded-full">
+                    <img src={navigationItem.icon} alt={navigationItem.label} class="w-7 grayscale brightness-200">
+                </button>
             {:else if navigationItem.type === NAVIGATION_ITEM_TYPES.Button}
-                <button class="bg-sky-400 hover:bg-sky-500 rounded-full py-2 px-2 w-full">{navigationItem.label}</button>
+                <TweetButton className="w-full py-2" value={navigationItem.label}/>
             {:else}
                 <button class="hover:bg-neutral-900 rounded-3xl inline py-2 px-2">
                     {#if navigationItem.type === NAVIGATION_ITEM_TYPES.Image || navigationItem.type === NAVIGATION_ITEM_TYPES.ImageOnly}
                         <img src={navigationItem.icon} alt={navigationItem.label} class="w-6">
                     {:else if navigationItem.type === NAVIGATION_ITEM_TYPES.FontIcon}
-                        <span class="material-symbols-outlined align-middle"> {@html `&#x${navigationItem.icon}`} </span> 
+                        <TweetIcon icon={navigationItem.icon} className="align-middle pb-1 pl-1"/>
                     {/if}
-                    <span class="mx-4">{navigationItem.label}</span>
+                    <span class="mx-4 font-semibold text-lg">{navigationItem.label}</span>
                 </button>
             {/if}
 
