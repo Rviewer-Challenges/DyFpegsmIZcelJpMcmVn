@@ -4,12 +4,14 @@
     export let boxData = {
       name: 'Tweet box',
       items: [
-        { topic: 'Topic', name: '#Name', tweets: 0 },
+        {
+          topic: 'Topic', name: '#Name', tweets: 0, image: '',
+        },
       ],
     }
 </script>
 
-<section class="rounded-lg mt-16 bg-zinc-900">
+<section class="rounded-xl mt-4 bg-zinc-900">
     <h1 class="text-lg font-extrabold py-4 mx-4">{boxData.name}</h1>
     <ul class="w-full cursor-pointer">
         {#each boxData.items as boxItem}

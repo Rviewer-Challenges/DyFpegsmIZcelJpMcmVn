@@ -27,13 +27,13 @@
 
 <ul class="float-right w-2/5 cursor-default">
     {#each navigationList as navigationItem}
-        <li class="m-4" class:fontBold="{navigationItem.selected === true}">
+        <li class="m-2" class:fontBold="{navigationItem.selected === true}">
             {#if navigationItem.type === NAVIGATION_ITEM_TYPES.ImageOnly}
                 <button class="hover:bg-sky-900/25 p-3 rounded-full">
                     <img src={navigationItem.icon} alt={navigationItem.label} class="w-7 grayscale brightness-200">
                 </button>
             {:else if navigationItem.type === NAVIGATION_ITEM_TYPES.Button}
-                <TweetButton className="w-full py-2" value={navigationItem.label}/>
+                <TweetButton className="w-full py-3 " value={navigationItem.label}/>
             {:else}
                 <button class="hover:bg-neutral-900 rounded-3xl inline py-2 px-2">
                     {#if navigationItem.type === NAVIGATION_ITEM_TYPES.Image || navigationItem.type === NAVIGATION_ITEM_TYPES.ImageOnly}

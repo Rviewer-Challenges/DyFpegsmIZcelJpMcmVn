@@ -3,6 +3,6 @@
     export let value = ''
 </script>
 
-<button class="bg-sky-500 hover:bg-sky-600 rounded-full py-1 px-5 font-bold {className}">
+<button class="bg-sky-500 hover:bg-sky-500/90 rounded-full py-1 px-5 font-bold {className}">
     {value}
 </button>

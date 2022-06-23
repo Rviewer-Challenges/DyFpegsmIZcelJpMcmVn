@@ -4,7 +4,7 @@
   import RightPane from './views/RightPane.svelte'
 </script>
 
-<main class="grid grid-cols-3">
+<main class="grid grid-cols-3 w-11/12">
   <LeftPane/>
   <TweetFeed/>
   <RightPane/>
