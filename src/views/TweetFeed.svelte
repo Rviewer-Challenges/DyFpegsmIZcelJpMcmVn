@@ -63,6 +63,23 @@
         likes: 558,
       },
       {
+        userId: 'Microsoft',
+        userName: 'Microsoft',
+        verified: true,
+        userImage: 'https://pbs.twimg.com/profile_images/1454912483248930822/_hO4WPRC_400x400.png',
+        summary: '131 governments orgs, 1 cybersecurity solution.<br/><br/>Our partnership with <span class="text-sky-500 hover:underline">@WAGovernment</span> locked down the networks and data of each individual agency with a single security program: <a href="https://msft.it/6000bo6FE" target="_blank" class="text-sky-500">msft.it/6000bo6FE</a>',
+        linkImage: {
+          src: 'https://pbs.twimg.com/media/FV48iwkWQAEpniW?format=jpg&name=medium',
+          href: 'https://msft.it/6000bo6FE',
+          site: 'microsoft.com',
+          title: 'Western Australian Government continues to improve its cybersecurity',
+        },
+        timeAgo: '20m',
+        comments: 6,
+        retweets: 7,
+        likes: 122,
+      },
+      {
         userId: 'MoureDev',
         userName: 'Brais Moure',
         userImage: 'https://pbs.twimg.com/profile_images/1539308966982860800/3UGtyag9_400x400.jpg',
@@ -131,11 +148,20 @@
                     {/if}
                     {#if tweet.gallery?.length === 4}
                         <div class="grid grid-cols-2 grid-rows-2 mr-4 mt-2">
-                            <div alt={tweet.userName} class="border border-zinc-900 outline-none w-full aspect-video rounded-tl-xl bg-center bg-cover" style="background-image:url('{tweet.gallery[0]}')"/>
-                            <div alt={tweet.userName} class="border border-zinc-900 outline-none w-full aspect-video rounded-tr-xl bg-center bg-cover" style="background-image:url('{tweet.gallery[1]}')"/>
-                            <div alt={tweet.userName} class="border border-zinc-900 outline-none w-full aspect-video rounded-bl-xl bg-center bg-cover" style="background-image:url('{tweet.gallery[2]}')"/>
-                            <div alt={tweet.userName} class="border border-zinc-900 outline-none w-full aspect-video rounded-br-xl bg-center bg-cover" style="background-image:url('{tweet.gallery[3]}')"/>
+                            <div class="border border-zinc-900 outline-none w-full aspect-video rounded-tl-xl bg-center bg-cover" style="background-image:url('{tweet.gallery[0]}')"/>
+                            <div class="border border-zinc-900 outline-none w-full aspect-video rounded-tr-xl bg-center bg-cover" style="background-image:url('{tweet.gallery[1]}')"/>
+                            <div class="border border-zinc-900 outline-none w-full aspect-video rounded-bl-xl bg-center bg-cover" style="background-image:url('{tweet.gallery[2]}')"/>
+                            <div class="border border-zinc-900 outline-none w-full aspect-video rounded-br-xl bg-center bg-cover" style="background-image:url('{tweet.gallery[3]}')"/>
                         </div>
+                    {/if}
+                    {#if tweet.linkImage}
+                        <a class="flex flex-col mr-4 mt-2" href={tweet.linkImage.href} target="_blank">
+                            <div class="border border-zinc-900 outline-none w-full aspect-video rounded-t-xl bg-center bg-cover" style="background-image:url('{tweet.linkImage.src}')"/>
+                            <div class="border shrink-0 border-zinc-900 outline-none w-full h-15 rounded-b-xl flex flex-col p-4 pt-2 text-sm">
+                              <span class="text-zinc-500">{tweet.linkImage.site}</span>
+                              <span>{tweet.linkImage.title}</span>
+                            </div>
+                        </a>
                     {/if}
                     
                     <span class="flex flex-row mt-2 justify-between w-3/4">
