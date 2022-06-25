@@ -7,7 +7,6 @@
       retweets: 0,
       likes: 0,
     }
-    
 </script>
 
 <span class="flex flex-row mt-2 justify-between w-3/4">

@@ -25,26 +25,28 @@
     ]
 </script>
 
-<ul class="float-right w-2/5 cursor-default">
-    {#each navigationList as navigationItem}
-        <li class="m-2" class:fontBold="{navigationItem.selected === true}">
-            {#if navigationItem.type === NAVIGATION_ITEM_TYPES.ImageOnly}
-                <button class="hover:bg-sky-900/25 p-3 rounded-full">
-                    <img src={navigationItem.icon} alt={navigationItem.label} class="w-7 grayscale brightness-200">
-                </button>
-            {:else if navigationItem.type === NAVIGATION_ITEM_TYPES.Button}
-                <TweetButton className="w-full py-3 " value={navigationItem.label}/>
-            {:else}
-                <button class="hover:bg-neutral-900 rounded-3xl inline py-2 px-2">
-                    {#if navigationItem.type === NAVIGATION_ITEM_TYPES.Image || navigationItem.type === NAVIGATION_ITEM_TYPES.ImageOnly}
-                        <img src={navigationItem.icon} alt={navigationItem.label} class="w-6">
-                    {:else if navigationItem.type === NAVIGATION_ITEM_TYPES.FontIcon}
-                        <TweetIcon icon={navigationItem.icon} className="align-middle pb-1 pl-1"/>
-                    {/if}
-                    <span class="mx-4 font-semibold text-lg">{navigationItem.label}</span>
-                </button>
-            {/if}
+<section class="relative w-2/5 float-right">
+    <ul class="cursor-default fixed">
+        {#each navigationList as navigationItem}
+            <li class="m-2" class:fontBold="{navigationItem.selected === true}">
+                {#if navigationItem.type === NAVIGATION_ITEM_TYPES.ImageOnly}
+                    <button class="hover:bg-sky-900/25 p-3 rounded-full">
+                        <img src={navigationItem.icon} alt={navigationItem.label} class="w-7 grayscale brightness-200">
+                    </button>
+                {:else if navigationItem.type === NAVIGATION_ITEM_TYPES.Button}
+                    <TweetButton className="w-full py-3 " value={navigationItem.label}/>
+                {:else}
+                    <button class="hover:bg-neutral-900 rounded-3xl inline py-2 px-2">
+                        {#if navigationItem.type === NAVIGATION_ITEM_TYPES.Image || navigationItem.type === NAVIGATION_ITEM_TYPES.ImageOnly}
+                            <img src={navigationItem.icon} alt={navigationItem.label} class="w-6">
+                        {:else if navigationItem.type === NAVIGATION_ITEM_TYPES.FontIcon}
+                            <TweetIcon icon={navigationItem.icon} className="align-middle pb-1 pl-1"/>
+                        {/if}
+                        <span class="mx-4 font-semibold text-lg">{navigationItem.label}</span>
+                    </button>
+                {/if}
 
-        </li>
-    {/each}
-</ul>
+            </li>
+        {/each}
+    </ul>
+</section>

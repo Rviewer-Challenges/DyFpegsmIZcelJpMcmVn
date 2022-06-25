@@ -40,12 +40,8 @@
     }
 </script>
 
-<section class="px-4 py-2 border-b border-zinc-700 {className}">
-    <header class="h-8 my-4 flex justify-between">
-        <span class="font-bold text-lg">Inicio</span>
-        <TweetIconButton icon={Icons.AutoAwesome} className="hover:bg-zinc-900"/>
-    </header>
-    <section class="flex justify-between my-2" >
+<section class="px-4 py-2 border-b border-zinc-700 relative w-full {className}">
+    <section class="flex justify-between my-2 " >
         <TweetAvatar src={avatarSrc} className="mr-5"/>
         <section class="grow">
             <div class="border w-24 mb-2 border-sky-100/50 text-sky-500 rounded-3xl text-xs font-bold text-center cursor-pointer hover:bg-sky-900/25 {isTweetFocused ? 'visible' : 'hidden'}">

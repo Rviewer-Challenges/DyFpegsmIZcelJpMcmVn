@@ -1,6 +1,8 @@
 <script>
   import TweetFeedHeader from '../components/TweetFeedHeader.svelte'
   import Tweet from '../components/Tweet/Tweet.svelte'
+  import { Icons } from '../components/TweetIcon.svelte'
+  import TweetIconButton from '../components/TweetIconButton.svelte'
   
   const tweets = [
     {
@@ -105,10 +107,13 @@
       likes: 122,
     },
   ]
-  
 </script>
 
-<section class="flex flex-col">
+<section class="flex flex-col relative">
+    <header class="h-12 left-0 top-0 flex justify-between w-full backdrop-blur sticky bg-zinc-900/25 p-1 z-10 cursor-pointer">
+        <span class="font-bold text-lg p-2">Inicio</span>
+        <TweetIconButton icon={Icons.AutoAwesome} className="hover:bg-zinc-400/25"/>
+    </header>
     <TweetFeedHeader className="shrink"/>
     <span class="h-12 text-center py-3 border-b border-zinc-700 hover:bg-zinc-900/50 cursor-pointer text-sky-400">Mostrar 7 Tweets</span>
     <ul class="grow">

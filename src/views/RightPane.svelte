@@ -20,7 +20,9 @@
       ],
     }
 </script>
-<section class="border-l border-zinc-700 float-right w-8/12 pl-5 py-2">
-    <TweetSearchInput/>
-    <TweetBox boxData={boxData}/>
+<section class="border-l border-zinc-700 float-right w-8/12 relative">
+    <section class="w-full sticky top-0 left-0 pl-5 py-2">
+      <TweetSearchInput/>
+      <TweetBox boxData={boxData}/>
+    </section>
 </section>
