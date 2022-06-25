@@ -14,6 +14,7 @@
       Favorite: 'e87d',
       FileUpload: 'e2c6',
       Verified: 'ef76',
+      ExpandMore: 'e5cf',
     }
 </script>
 
