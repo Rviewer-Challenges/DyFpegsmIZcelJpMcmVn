@@ -8,7 +8,7 @@
 </script>
 
 
-<li class="h-18 flex flex-col justify-between py-2 px-4 hover:bg-zinc-800 relative">
+<li class="h-18 flex flex-col justify-between py-2 px-4 hover:bg-zinc-800/50 relative">
     {#if boxItem.image}
         <div class="absolute right-4 top-2 rounded-lg w-16 h-16 bg-cover bg-center" style="background-image: url('{boxItem.image}')"/>
     {:else}
