@@ -12,7 +12,7 @@
 </script>
 
 <section class="rounded-xl mt-4 bg-zinc-900">
-    <h1 class="text-lg font-extrabold py-4 mx-4">{boxData.name}</h1>
+    <h1 class="text-xl font-extrabold py-3 mx-4">{boxData.name}</h1>
     <ul class="w-full cursor-pointer">
         {#each boxData.items as boxItem}
             <TweetBoxItem boxItem={boxItem}/>

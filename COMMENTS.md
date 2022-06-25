@@ -33,7 +33,7 @@ First part will be setting up all what is needed for the project, doing the plan
 Here I plan to spend most of my time building views and components to display the data in the required way for the challenge, also defining the mocks to be used so that they are easily loaded in the views.
 
 ### Refine
-Here I will make sure that nothing is missing in the pages and components built and add the most important tests to ensure it (No test framework has been chosen yet). 
+Here I will make sure that nothing is missing in the pages and components built. 
 
 ### Deliver
 Getting a server to deploy the project and raise the pull request to complete the challenge (No hosting has been chosen yet).

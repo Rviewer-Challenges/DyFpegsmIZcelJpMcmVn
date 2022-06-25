@@ -44,21 +44,21 @@
     <section class="flex justify-between my-2 " >
         <TweetAvatar src={avatarSrc} className="mr-5"/>
         <section class="grow">
-            <div class="border w-24 mb-2 border-sky-100/50 text-sky-500 rounded-3xl text-xs font-bold text-center cursor-pointer hover:bg-sky-900/25 {isTweetFocused ? 'visible' : 'hidden'}">
-                <span>Público</span>
+            <div class="border w-24 mb-2 border-sky-100/50 text-sky-500 rounded-3xl text-sm font-semibold text-center cursor-pointer hover:bg-sky-900/25 {isTweetFocused ? 'visible' : 'hidden'}">
+                <span class="align-middle">Público</span>
                 <TweetIcon icon={Icons.ExpandMore} className="align-middle"/>
             </div>
             <textarea rows={tweetRows} class="bg-black outline-none w-full resize-none peer text-xl h-10 pt-2 overflow-hidden" placeholder="¿Qué está pasando?" on:keyup={onTweetKeyUp} on:input={onTweetInput} on:focus={onTweetFocus} bind:value={tweetContent}/>
         </section>
     </section>
     <section class="flex justify-between">
-        <section class="pl-16 pt-2">
-            <TweetIconButton icon={Icons.Image} className="text-sky-500 hover:bg-sky-900/25"/>
-            <TweetIconButton icon={Icons.GifBox} className="text-sky-500 hover:bg-sky-900/25"/>
-            <TweetIconButton icon={Icons.Leaderboard} className="text-sky-500 hover:bg-sky-900/25"/>
-            <TweetIconButton icon={Icons.Mood} className="text-sky-500 hover:bg-sky-900/25"/>
-            <TweetIconButton icon={Icons.EditCalendar} className="text-sky-500 hover:bg-sky-900/25"/>
-            <TweetIconButton icon={Icons.AddLocation} className="text-sky-500/50 hover:bg-sky-900/25" disabled={true}/>
+        <section class="pl-16 pt-2 shrink w-80">
+            <TweetIconButton icon={Icons.Image} className="text-sky-500 hover:bg-sky-900/25" iconClassName="text-xl" size="sm"/>
+            <TweetIconButton icon={Icons.GifBox} className="text-sky-500 hover:bg-sky-900/25" iconClassName="text-xl"size="sm"/>
+            <TweetIconButton icon={Icons.Leaderboard} className="text-sky-500 hover:bg-sky-900/25" iconClassName="text-xl" size="sm"/>
+            <TweetIconButton icon={Icons.Mood} className="text-sky-500 hover:bg-sky-900/25" iconClassName="text-xl" size="sm"/>
+            <TweetIconButton icon={Icons.EditCalendar} className="text-sky-500 hover:bg-sky-900/25" iconClassName="text-xl" size="sm"/>
+            <TweetIconButton icon={Icons.AddLocation} className="text-sky-500/50 hover:bg-sky-900/25" disabled={true} iconClassName="text-xl" size="sm"/>
         </section>
         <TweetButton value="Twittear" className="justify-end h-10 {!isTweetActive ? 'opacity-50 cursor-default' : ''}"/>
     </section>

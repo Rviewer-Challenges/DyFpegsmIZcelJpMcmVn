@@ -15,6 +15,6 @@
         <TweetIconButton icon={Icons.MoreHorizontal} size="sm" className="text-sm absolute right-2 top-2 text-zinc-500 hover:bg-sky-900/25 hover:text-sky-500"/>
     {/if}
     <span class="text-zinc-400/75 text-xs py-1">{boxItem.topic}</span>
-    <span class="text-white text-sm font-semibold">{boxItem.name}</span>
+    <span class="text-white text-sm font-extrabold">{boxItem.name}</span>
     <span class="text-zinc-400/75 text-xs py-1">{`${boxItem.tweets} Tweets`}</span>
 </li>
