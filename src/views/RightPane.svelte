@@ -2,6 +2,8 @@
     import TweetSearchInput from '../components/TweetSearchInput.svelte'
     import TweetBox from '../components/TweetBox.svelte'
 
+    export let className = ''
+
     const boxData = {
       name: 'Qué está pasando',
       items: [
@@ -20,8 +22,8 @@
       ],
     }
 </script>
-<section class="border-l border-zinc-600 float-right w-7/12 relative -m-10">
-    <section class="w-full sticky top-0 left-0 pl-8 py-2">
+<section class="border-l border-zinc-600 relative {className}">
+    <section class="w-[350px] sticky top-0 left-0 mx-8 py-2 hidden lg:block">
       <TweetSearchInput/>
       <TweetBox boxData={boxData}/>
     </section>

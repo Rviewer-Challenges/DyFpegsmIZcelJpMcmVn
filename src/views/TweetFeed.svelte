@@ -3,6 +3,8 @@
   import Tweet from '../components/Tweet/Tweet.svelte'
   import { Icons } from '../components/TweetIcon.svelte'
   import TweetIconButton from '../components/TweetIconButton.svelte'
+
+  export let className = ''
   
   const tweets = [
     {
@@ -109,7 +111,7 @@
   ]
 </script>
 
-<section class="flex flex-col relative w-11/12">
+<section class="flex flex-col relative {className}">
     <header class="h-12 left-0 top-0 flex justify-between w-full backdrop-blur sticky bg-zinc-900/25 p-1 z-10 cursor-pointer">
         <span class="font-bold text-lg p-2">Inicio</span>
         <TweetIconButton icon={Icons.AutoAwesome} className="hover:bg-zinc-400/25"/>

@@ -4,10 +4,10 @@
   import RightPane from './views/RightPane.svelte'
 </script>
 
-<main class="grid grid-cols-3 -ml-20">
-  <LeftPane/>
-  <TweetFeed/>
-  <RightPane/>
+<main class="flex flex-row lg:-ml-[300px] xl:-ml-32">
+  <LeftPane className='shrink xl:grow w-full'/>
+  <TweetFeed className="shrink sm:shrink-0 xs:w-full sm:w-[600px]"/>
+  <RightPane className="grow w-full"/>
 </main>
 
 <style>

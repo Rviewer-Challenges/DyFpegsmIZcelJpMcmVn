@@ -38,8 +38,8 @@
                         <img src={navigationItem.icon} alt={navigationItem.label} class="w-7 grayscale invert">
                     </button>
                 {:else if navigationItem.type === NAVIGATION_ITEM_TYPES.Button}
-                    <TweetButton className="w-56 h-12 hidden lg:inline" value={navigationItem.label}/>
-                    <button class="hover:bg-sky-500/90 bg-sky-500 w-12 aspect-square p-3 ml-3 rounded-full self-center inline lg:hidden">
+                    <TweetButton className="w-56 h-12 hidden xl:inline" value={navigationItem.label}/>
+                    <button class="hover:bg-sky-500/90 bg-sky-500 w-12 aspect-square p-3 ml-3 rounded-full self-center inline xl:hidden">
                         <img src={navigationItem.icon} alt={navigationItem.label} class="w-7 grayscale invert">
                     </button>
                 {:else}
@@ -49,7 +49,7 @@
                         {:else if navigationItem.type === NAVIGATION_ITEM_TYPES.FontIcon}
                             <TweetIcon icon={navigationItem.icon} className="align-middle pb-1 pl-1 text-3xl" variation={navigationItem.selected ? 'rounded' : 'outlined'}/>
                         {/if}
-                        <span class="mx-4 text-xl hidden lg:inline">{navigationItem.label}</span>
+                        <span class="mx-4 text-xl hidden xl:inline">{navigationItem.label}</span>
                     </button>
                 {/if}
             </li>
