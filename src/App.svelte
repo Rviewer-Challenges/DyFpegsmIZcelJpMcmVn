@@ -4,10 +4,10 @@
   import RightPane from './views/RightPane.svelte'
 </script>
 
-<main class="flex flex-row lg:-ml-[300px] xl:-ml-32">
-  <LeftPane className='shrink xl:grow w-full'/>
-  <TweetFeed className="shrink sm:shrink-0 xs:w-full sm:w-[600px]"/>
-  <RightPane className="grow w-full"/>
+<main class="relative flex flex-col-reverse sm:flex-row lg:-ml-[300px] xl:-ml-32">
+  <LeftPane className='sticky bottom-0 left-0 shrink sm:static sm:w-full xl:grow'/>
+  <TweetFeed className="shrink sm:shrink-0 sm:w-[600px]"/>
+  <RightPane className="hidden sm:block sm:grow sm:w-full"/>
 </main>
 
 <style>
@@ -16,6 +16,7 @@
     background-color: black;
     color: white;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
   *, *:before, *:after {
     box-sizing: inherit;
