@@ -1,8 +1,8 @@
-# Twitchter
+# Twitter? ... No, Twitchter 
 
-Twitter mirroring page for the [Twitter Mirroring Challenge](./CHALLENGE.md).
+Twitter mirroring page for the [Twitter Mirroring Challenge](./CHALLENGE.md) to be streamed on Twitch.
 
-## Features (In Progress)
+## Features
 
 Twitter feed that displays Tweets of the following types:
 
@@ -17,11 +17,6 @@ Each Tweet contains the following functionalities:
 * Represent hashtag or mentions (without filtering interaction).
 * Represent links (with interaction and opening in a browser).
 * User photo, name, date, tweet body and action buttons (without the profile edit feature)
-
-Additional features:
-* Tweets with video or poll.
-* Tweets detail page, showing comments.
-* Image detail and zoom.
 
 ## Technologies
 
