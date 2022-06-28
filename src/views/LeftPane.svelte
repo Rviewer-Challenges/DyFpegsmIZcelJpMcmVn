@@ -1,5 +1,5 @@
 <script>
-    import TweetNavigation from '../components/TweetNavigation.svelte'
+    import TweetNavigation from '../components/TweetNavigation/TweetNavigation.svelte'
     
     export let className = ''
 </script>

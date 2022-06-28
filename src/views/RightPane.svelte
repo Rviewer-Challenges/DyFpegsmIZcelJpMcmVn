@@ -1,6 +1,6 @@
 <script>
     import TweetSearchInput from '../components/TweetSearchInput.svelte'
-    import TweetBox from '../components/TweetBox.svelte'
+    import TweetBox from '../components/TweetBox/TweetBox.svelte'
     import topics from '../mocks/topics.json'
 
     export let className = ''

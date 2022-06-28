@@ -1,6 +1,6 @@
 <script>
-    import TweetIconButton from './TweetIconButton.svelte'
-    import { Icons } from './TweetIcon.svelte'
+    import TweetIconButton from '../TweetIconButton.svelte'
+    import { Icons } from '../TweetIcon.svelte'
 
     export let boxItem = {
       topic: 'Topic', name: '#Name', tweets: 0, image: '',
