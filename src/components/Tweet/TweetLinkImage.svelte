@@ -4,6 +4,7 @@
       href: '',
       site: '',
       title: '',
+      summary: '',
     }
 </script>
 
@@ -12,5 +13,8 @@
     <div class="border shrink-0 border-zinc-800 outline-none w-full h-15 rounded-b-xl flex flex-col p-4 pt-2 text-sm">
     <span class="text-zinc-500">{linkImage.site}</span>
     <span>{linkImage.title}</span>
+    {#if linkImage.summary}
+      <span class="text-zinc-500">{linkImage.summary}</span>
+    {/if}
     </div>
 </a>

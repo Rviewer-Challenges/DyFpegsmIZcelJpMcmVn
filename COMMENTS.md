@@ -36,6 +36,15 @@ Here I plan to spend most of my time building views and components to display th
 Here I will make sure that nothing is missing in the pages and components built. 
 
 ### Deliver
-Getting a server to deploy the project and raise the pull request to complete the challenge (No hosting has been chosen yet).
+Getting a server to deploy the project and raise the pull request to complete the challenge. 
+
+#### Hosting provider
+[![Digital Ocean](https://img.shields.io/badge/digital%20ocean-white?style=for-the-badge&logo=digitalocean)](https://www.digitalocean.com)
+
+I chose **Digital Ocean** as the hosting provider since I have deployed a couple of projects before there withaut any issue.
+
+### Future work
+
+After the challenge deadline I plan to add testing to the main **Svelte** components and explore more advanced features of **Tailwind** for creting a custom theme.
 
 [Go Back](./README.md).

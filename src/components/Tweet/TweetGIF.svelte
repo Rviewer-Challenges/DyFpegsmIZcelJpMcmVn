@@ -12,7 +12,7 @@
 </script>
 
 
-<section class="relative">
+<section class="relative mt-2">
     {#if toggleVideo}
         <img src={gif.poster} alt="" class="rounded-2xl" on:click={onToggleVideo}/>
     {:else}
