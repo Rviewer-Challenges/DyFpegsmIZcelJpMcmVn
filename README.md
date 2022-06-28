@@ -53,10 +53,20 @@ npm run dev
 
 ## Screenshots
 
-### Main Page (In progress)
+### Main Page (Large)
 
-<img src="./media/MainPage.png" title="Main Page">
+<img src="./media/MainPage.png" width="1200px" title="Main Page (Large)">
+<br/>
+<img src="./media/OriginalMainPage.png" width="1200px" title="Main Page - Original (Large)">
 
-### Main Page (Original)
+### Main Page (Small)
 
-<img src="./media/OriginalMainPage.png" title="Main Page - Original">
+<img src="./media/smMainPage.png" width="900px" title="Main Page (Small)">
+<br/>
+<img src="./media/smOriginalMainPage.png" width="900px" title="Main Page - Original (Small)">
+
+### Main Page (Mobile)
+
+<img src="./media/xsMainPage.png" width=400px title="Main Page (Mobile)">
+<br/>
+<img src="./media/xsOriginalMainPage.png" width=400px  title="Main Page - Original (Mobile)"
