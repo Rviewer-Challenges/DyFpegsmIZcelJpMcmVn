@@ -64,4 +64,4 @@ npm run dev
 
 <img src="./media/xsMainPage.png" width=400px title="Main Page (Mobile)">
 <br/>
-<img src="./media/xsOriginalMainPage.png" width=400px  title="Main Page - Original (Mobile)"
+<img src="./media/xsOriginalMainPage.png" width=400px  title="Main Page - Original (Mobile)">
