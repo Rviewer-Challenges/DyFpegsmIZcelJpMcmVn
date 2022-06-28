@@ -24,7 +24,7 @@ Each Tweet contains the following functionalities:
 [![Vite](https://img.shields.io/badge/vite-yellow?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 [![Tailwind](https://img.shields.io/badge/tailwind%20css-0f172a?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
 
-For details on the decisions made, please review: [Challenge Comments](./COMMENTS.md)
+For more details on the decisions made, please review: [Challenge Comments](./COMMENTS.md)
 
 ## Recommended IDE Setup
 
@@ -45,6 +45,10 @@ npm install
 ```
 npm run dev
 ```
+
+## Live Sample
+
+[![Twitter](https://img.shields.io/badge/Twitter-Live-blue?style=for-the-badge&logo=Twitter)](http://64.227.65.229:3000)
 
 ## Screenshots
 

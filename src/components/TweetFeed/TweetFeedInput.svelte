@@ -1,8 +1,8 @@
 <script>
-    import TweetAvatar from './TweetAvatar.svelte'
-    import TweetIcon, { Icons } from './TweetIcon.svelte'
-    import TweetButton from './TweetButton.svelte'
-    import TweetIconButton from './TweetIconButton.svelte'
+    import TweetAvatar from '../TweetAvatar.svelte'
+    import TweetIcon, { Icons } from '../TweetIcon.svelte'
+    import TweetButton from '../TweetButton.svelte'
+    import TweetIconButton from '../TweetIconButton.svelte'
 
     export let className = ''
 
